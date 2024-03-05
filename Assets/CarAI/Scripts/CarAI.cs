@@ -3,6 +3,7 @@ using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
+using System;
 
 public class CarAI : MonoBehaviour
 {
@@ -46,12 +47,29 @@ public class CarAI : MonoBehaviour
     private int Fails;
     private float MovementTorque = 1;
 
+    [SerializeField] GameObject road2Lane1Vehicals = null;
+    [SerializeField] GameObject road2Lane2Vehicals ;
     void Awake()
     {
         currentWayPoint = 0;
         allowMovement = true;
         move = true;
-        CustomDestination = GameObject.Find("Lane1Dest").transform;
+       // CustomDestination = GameObject.Find("Lane1Dest").transform;
+      if (CustomDestination == null)
+        {
+            if (road2Lane1Vehicals != null)
+            {
+                int random = UnityEngine.Random.Range(0, 2);
+                if (random == 0) { CustomDestination = GameObject.Find("Lane1Dest").transform; }
+                else if (random == 1) { CustomDestination = GameObject.Find("lane3Dest1").transform; }
+            }
+            else if(road2Lane2Vehicals != null)
+            {
+                Debug.Log("else");
+                CustomDestination = GameObject.Find("lane3Dest1").transform;
+            }
+        }
+     
     }
 
     void Start()
@@ -82,7 +100,13 @@ public class CarAI : MonoBehaviour
             }
         }
     }
-
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Finish"))
+        {
+            Destroy(this.gameObject);
+        }
+    }
     private void PathProgress() //Checks if the agent has reached the currentWayPoint or not. If yes, it will assign the next waypoint as the currentWayPoint depending on the input
     {
         wayPointManager();
@@ -139,7 +163,7 @@ public class CarAI : MonoBehaviour
 
         if (waypoints.Count == 0)
         {
-            Vector3 randomDirection = Random.insideUnitSphere * 100;
+            Vector3 randomDirection = UnityEngine.Random.insideUnitSphere * 100;
             randomDirection += transform.position;
             sourcePostion = carFront.position;
             Calculate(randomDirection, sourcePostion, carFront.forward, NavMeshLayerBite);
@@ -147,7 +171,7 @@ public class CarAI : MonoBehaviour
         else
         {
             sourcePostion = waypoints[waypoints.Count - 1];
-            Vector3 randomPostion = Random.insideUnitSphere * 100;
+            Vector3 randomPostion = UnityEngine.Random.insideUnitSphere * 100;
             randomPostion += sourcePostion;
             Vector3 direction = (waypoints[waypoints.Count - 1] - waypoints[waypoints.Count - 2]).normalized;
             Calculate(randomPostion, sourcePostion, direction, NavMeshLayerBite);
