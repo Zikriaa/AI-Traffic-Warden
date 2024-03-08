@@ -334,6 +334,7 @@
 "Assets/CarAI/Scripts/CarAI.cs"
 "Assets/CarAI/Scripts/controllingCarAI.cs"
 "Assets/CarAI/Scripts/SensorManager.cs"
+"Assets/Script/Lane1Spawner.cs"
 "Assets/Script/Road1/Road1Script/CarAILane1.cs"
 "Assets/Script/Road1/Road1Script/CarAILane2.cs"
 "Assets/Script/Road1/Road1Script/CarAILane3.cs"
@@ -342,6 +343,9 @@
 "Assets/Script/Road1/Road1Sensor/Sensor2.cs"
 "Assets/Script/Road1/Road1Sensor/Sensor3.cs"
 "Assets/Script/Road1/Road1Sensor/SensorForOtherCars.cs"
+"Assets/Script/Road1Script/CarAILane1.cs"
+"Assets/Script/Road1Script/Lane1Spawner.cs"
+"Assets/Script/Sensor.cs"
 "Assets/Script/TrafficSystem/Road1TrafficLight.cs"
 "Assets/Script/TrafficSystem/TrafficSystemController.cs"
 -langversion:9.0

@@ -30,7 +30,18 @@ public class Sensor : MonoBehaviour
             {
                 if (_road1TrafficLight.onGreen)
                 {
-                    carAI.move = true;
+                    if (_road1TrafficLight.timerGreen < 5 || _road1TrafficLight.timerGreen <=0)
+                    {
+                        carAI.move = false;
+                    }
+                    else
+                    {
+                        carAI.move = true;
+                    }
+                }
+                else if (_road1TrafficLight.onYellow)
+                {
+                    carAI.move = false;
                 }
                 else if (_road1TrafficLight.onRed)
                 {
@@ -51,7 +62,12 @@ public class Sensor : MonoBehaviour
             {
                 if (_road1TrafficLight.onGreen)
                 {
-                    carAI.move = true;
+                    Invoke("wait", 2f);
+
+                }
+                else if (_road1TrafficLight.onYellow)
+                {
+                    carAI.move = false;
                 }
                 else if (_road1TrafficLight.onRed)
                 {
@@ -61,6 +77,10 @@ public class Sensor : MonoBehaviour
             }
             Debug.Log("SignalCheck");
         }
+    }
+    void wait()
+    {
+        carAI.move = true;
     }
     private void OnTriggerExit(Collider other)
     {

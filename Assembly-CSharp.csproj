@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{84438C8A-4189-5F06-1CDA-EB6E9B679341}</ProjectGuid>
+    <ProjectGuid>{DC23820F-B56C-95F6-F500-0335D2CA841E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,12 +56,23 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Road1Script\CarAILane1.cs" />
+    <Compile Include="Assets\Script\TrafficSystem\Road1TrafficLight.cs" />
+    <Compile Include="Assets\Script\Road1\Road1Sensor\SensorForOtherCars.cs" />
+    <Compile Include="Assets\Script\Road1\Road1Script\CarAILane1.cs" />
     <Compile Include="Assets\Script\Road1Script\Lane1Spawner.cs" />
+    <Compile Include="Assets\Script\Road1\Road1Sensor\Sensor.cs" />
+    <Compile Include="Assets\Script\Lane1Spawner.cs" />
+    <Compile Include="Assets\Script\Road1\Road1Sensor\Sensor2.cs" />
+    <Compile Include="Assets\Script\Road1Script\CarAILane1.cs" />
     <Compile Include="Assets\CarAI\Scripts\controllingCarAI.cs" />
+    <Compile Include="Assets\Script\Road1\Road1Script\Lane1Spawner.cs" />
+    <Compile Include="Assets\Script\Road1\Road1Script\CarAILane3.cs" />
+    <Compile Include="Assets\Script\Road1\Road1Sensor\Sensor3.cs" />
+    <Compile Include="Assets\Script\TrafficSystem\TrafficSystemController.cs" />
+    <Compile Include="Assets\Script\Road1\Road1Script\CarAILane2.cs" />
+    <Compile Include="Assets\Script\Sensor.cs" />
     <Compile Include="Assets\CarAI\Scripts\CarAI.cs" />
     <Compile Include="Assets\CarAI\Scripts\SensorManager.cs" />
-    <Compile Include="Assets\Script\Sensor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\CarAI\Readme.txt.txt" />
@@ -701,19 +712,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{7F9FDC7C-05D3-19F0-E33C-DF31E9BD7EBF}</Project>
+      <Project>{1ED2762F-57BF-C191-AFC2-7B8E18F8F4CE}</Project>
       <Name>NavMeshComponents</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
-      <Project>{79D66BA1-913A-C42E-D7A2-C3C13895DD08}</Project>
+      <Project>{684A1C2D-94D0-940D-39AA-33B83146334B}</Project>
       <Name>NavMeshComponentsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
-      <Project>{D8C360A8-2659-35E6-A3B8-F54D0F6AFC05}</Project>
+      <Project>{82E54B6E-A1C7-B7AD-EF40-81C141A3E342}</Project>
       <Name>NavMeshComponentsExamplesEditor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsExamples.csproj">
-      <Project>{C7A7E58F-B9D9-2ED5-1F9E-3AF46F866755}</Project>
+      <Project>{06596936-2E73-6884-2CAC-2C0CBC57B425}</Project>
       <Name>NavMeshComponentsExamples</Name>
     </ProjectReference>
   </ItemGroup>

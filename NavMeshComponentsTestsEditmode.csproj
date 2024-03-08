@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{712F6B42-356F-A3F1-1F3A-021CA392234A}</ProjectGuid>
+    <ProjectGuid>{5A03ABAA-D588-8FF5-F57C-5F63EBB3A47D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>NavMeshComponentsTestsEditmode</AssemblyName>
@@ -720,11 +720,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{7F9FDC7C-05D3-19F0-E33C-DF31E9BD7EBF}</Project>
+      <Project>{1ED2762F-57BF-C191-AFC2-7B8E18F8F4CE}</Project>
       <Name>NavMeshComponents</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
-      <Project>{79D66BA1-913A-C42E-D7A2-C3C13895DD08}</Project>
+      <Project>{684A1C2D-94D0-940D-39AA-33B83146334B}</Project>
       <Name>NavMeshComponentsEditor</Name>
     </ProjectReference>
   </ItemGroup>

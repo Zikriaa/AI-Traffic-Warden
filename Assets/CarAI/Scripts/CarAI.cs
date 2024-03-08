@@ -47,28 +47,28 @@ public class CarAI : MonoBehaviour
     private int Fails;
     private float MovementTorque = 1;
 
+    [Header("Vehicals Follow Path")]
+    [Header("Vehical Road 2")]
     [SerializeField] GameObject road2Lane1Vehicals = null;
     [SerializeField] GameObject road2Lane2Vehicals ;
+
+    [Header("Vehicals Road 3")]
+    [SerializeField] GameObject road3lane1;
+    [SerializeField] GameObject road3lane2;
+    [SerializeField] GameObject road3lane3;
+
+    [Header("Vehicals Road 4")]
+    [SerializeField] GameObject road4lane1;
+    [SerializeField] GameObject road4lane2;
+
     void Awake()
     {
         currentWayPoint = 0;
         allowMovement = true;
         move = true;
-       // CustomDestination = GameObject.Find("Lane1Dest").transform;
-      if (CustomDestination == null)
-        {
-            if (road2Lane1Vehicals != null)
-            {
-                int random = UnityEngine.Random.Range(0, 2);
-                if (random == 0) { CustomDestination = GameObject.Find("Lane1Dest").transform; }
-                else if (random == 1) { CustomDestination = GameObject.Find("lane3Dest1").transform; }
-            }
-            else if(road2Lane2Vehicals != null)
-            {
-                Debug.Log("else");
-                CustomDestination = GameObject.Find("lane3Dest1").transform;
-            }
-        }
+        // CustomDestination = GameObject.Find("Lane1Dest").transform;
+
+        FindPathForVehicals();
      
     }
 
@@ -83,6 +83,52 @@ public class CarAI : MonoBehaviour
        UpdateWheels();
       ApplySteering();
         PathProgress();
+    }
+    void FindPathForVehicals()
+    {
+        if (CustomDestination == null)
+        {
+            if (road2Lane1Vehicals != null)
+            {
+                int random = UnityEngine.Random.Range(0, 2);
+                if (random == 0) { CustomDestination = GameObject.Find("Lane1Dest").transform; }
+                else if (random == 1) { CustomDestination = GameObject.Find("lane3Dest1").transform; }
+            }
+            else if (road2Lane2Vehicals != null)
+            {
+                Debug.Log("else");
+                CustomDestination = GameObject.Find("lane3Dest1").transform;
+            }
+            else if (road3lane1 != null)
+            {
+                int random = UnityEngine.Random.Range(0, 2);
+                if (random == 0) { CustomDestination = GameObject.Find("road3lane1dest").transform; }
+                else if (random == 1) { CustomDestination = GameObject.Find("road3lane1dest1").transform; }
+            }
+            else if (road3lane2 != null)
+            {
+                CustomDestination = GameObject.Find("road3lane2dest").transform;
+            }
+            else if (road3lane3 != null)
+            {
+                int random = UnityEngine.Random.Range(0, 2);
+                if (random == 0) { CustomDestination = GameObject.Find("road3lane3dest").transform; }
+                else if (random == 1) { CustomDestination = GameObject.Find("road3lane3dest1").transform; }
+                // else if (random == 2) { CustomDestination = GameObject.Find("lane2Dest").transform; }
+            }
+            else if (road4lane1 != null)
+            {
+                int random = UnityEngine.Random.Range(0, 2);
+                if (random == 0) { CustomDestination = GameObject.Find("road3lane1dest").transform; }
+                else if (random == 1) { CustomDestination = GameObject.Find("Lane1Dest2").transform; }
+            }
+            else if (road4lane2 != null)
+            {
+                int random = UnityEngine.Random.Range(0, 2);
+                if (random == 0) { CustomDestination = GameObject.Find("road3lane3dest").transform; }
+                else if (random == 1) { CustomDestination = GameObject.Find("lane3Dest").transform; }
+            }
+        }
     }
 
     private void CalculateNavMashLayerBite()
@@ -350,39 +396,7 @@ public class CarAI : MonoBehaviour
         else
             ApplyBrakes();
     }
-    //private bool isColliding = false;
-
-    //void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.CompareTag("Car") && !isColliding) // Check if the collided object is another car and not already colliding
-    //    {
-    //        isColliding = true;
-    //        ApplyObstacleAvoidance(other.gameObject);
-    //    }
-    //}
-
-    //void OnTriggerExit(Collider other)
-    //{
-    //    if (other.CompareTag("Car")) // Check if the colliding object is another car
-    //    {
-    //        isColliding = false;
-    //        // Resume movement
-    //        this.move = true;
-    //    }
-    //}
-
-    //void ApplyObstacleAvoidance(GameObject otherCar)
-    //{
-    //    // Stop the current car
-    //    move = false;
-
-    //    // Allow the other car to continue moving forward
-    //    CarAI otherCarAI = otherCar.GetComponent<CarAI>();
-    //    if (otherCarAI != null)
-    //    {
-    //        otherCarAI.move = true;
-    //    }
-    //}
+   
     void debug(string text, bool IsCritical)
     {
         if (Debugger)

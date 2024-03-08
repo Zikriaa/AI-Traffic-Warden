@@ -14,7 +14,7 @@ public class TrafficSystemController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       // road1TrafficLight.pointerForSignal = true;
+        road1TrafficLight.pointerForSignal = true;
         
     }
 
@@ -24,7 +24,7 @@ public class TrafficSystemController : MonoBehaviour
         if (road1TrafficLight.pointerForSignal)
         { 
             road1TrafficLight.onRed = false;
-            road1TrafficLight.onGreen = true;
+            road1TrafficLight.onYellow = true;
             road2TrafficLight.pointerForSignal = false;
             road3TrafficLight.pointerForSignal = false;
             road4TrafficLight.pointerForSignal = false;
@@ -40,7 +40,7 @@ public class TrafficSystemController : MonoBehaviour
         else if (road2TrafficLight.pointerForSignal)
         {
             road2TrafficLight.onRed = false;
-            road2TrafficLight.onGreen = true;
+            road2TrafficLight.onYellow = true;
             road1TrafficLight.pointerForSignal = false;
             road3TrafficLight.pointerForSignal = false;
             road4TrafficLight.pointerForSignal = false;
@@ -55,7 +55,7 @@ public class TrafficSystemController : MonoBehaviour
         else if (road3TrafficLight.pointerForSignal) 
         {
             road3TrafficLight.onRed = false;
-            road3TrafficLight.onGreen = true;
+            road3TrafficLight.onYellow = true;
             road1TrafficLight.pointerForSignal = false;
             road2TrafficLight.pointerForSignal = false;
             road4TrafficLight.pointerForSignal = false;
@@ -70,7 +70,7 @@ public class TrafficSystemController : MonoBehaviour
         else if (road4TrafficLight.pointerForSignal)
         {
             road4TrafficLight.onRed = false;
-            road4TrafficLight.onGreen = true;
+            road4TrafficLight.onYellow = true;
             road1TrafficLight.pointerForSignal = false;
             road2TrafficLight.pointerForSignal = false;
             road3TrafficLight.pointerForSignal = false;

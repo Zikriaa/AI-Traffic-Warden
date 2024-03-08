@@ -7,7 +7,7 @@ public class Road1TrafficLight : MonoBehaviour
     [SerializeField] GameObject[] signalLights;
     public bool onRed, onGreen, onYellow = false;
     float timerRed = 10; 
-    public float timerGreen = 5;
+    public float timerGreen = 10 , timerYellow = 3f;
     public bool pointerForSignal = false;
     public bool timerCompleted = false;
     
@@ -36,21 +36,39 @@ public class Road1TrafficLight : MonoBehaviour
     }
     void TimerForSignal()
     {
+        if (pointerForSignal && onYellow)
+        {
+            timerYellow -= Time.deltaTime;
+            if (timerYellow <= 0)
+            {
+                onYellow = false;
+                onGreen = true;
+                Invoke("ResetYellowTimer", 3f);
+
+            }
+           
+
+        }
+        //if (pointerForSignal && onGreen) { }
         if (pointerForSignal && onGreen)
         {
             timerGreen -= Time.deltaTime;
             Debug.Log("timergreen : " + timerGreen);
-            if(timerGreen <= 0)
+            if (timerGreen <= 0)
             {
-                Invoke("Reset", 2f);
+                Invoke("ResetGreenTimer", 2f);
             }
-           
+
         }
-      
+
     }
-    private void Reset()
+    private void ResetYellowTimer()
     {
-        timerGreen = 5;
+        timerYellow = 3f;
+    }
+    private void ResetGreenTimer()
+    {
+        timerGreen = 10f;
     }
     void TurnLightOn()
     {
@@ -67,12 +85,12 @@ public class Road1TrafficLight : MonoBehaviour
             signalLights[0].gameObject.SetActive(false);
            
         }
-        //else if(onYellow)
-        //    { signalLights[2].gameObject.SetActive(true);
-        //    signalLights[0].gameObject.SetActive(false);
-        //    signalLights[1].gameObject.SetActive(false);
-        //    onGreen = false;
-        //    onRed = false;
-        //}
+        else if (onYellow)
+        {
+            signalLights[2].gameObject.SetActive(true);
+            signalLights[0].gameObject.SetActive(false);
+            signalLights[1].gameObject.SetActive(false);
+           
+        }
     } 
 }
