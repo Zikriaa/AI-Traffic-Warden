@@ -6,15 +6,16 @@ TagManager:
   tags:
   - Car
   - Signal
+  - Detector
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - vehicles
   - Water
   - UI
   - street
-  - 
+  - Detector
   - 
   - 
   - 

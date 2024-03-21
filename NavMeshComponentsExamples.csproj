@@ -56,18 +56,18 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Examples\Scripts\NavMeshSourceTag.cs" />
     <Compile Include="Assets\Examples\Scripts\RandomInstancing.cs" />
+    <Compile Include="Assets\Examples\Scripts\DungeonManager.cs" />
+    <Compile Include="Assets\Examples\Scripts\MeshTool.cs" />
+    <Compile Include="Assets\Examples\Scripts\Oscillator.cs" />
+    <Compile Include="Assets\Examples\Scripts\AgentLinkMover.cs" />
+    <Compile Include="Assets\Examples\Scripts\NavMeshSourceTag.cs" />
     <Compile Include="Assets\Examples\Scripts\NavMeshPrefabInstance.cs" />
     <Compile Include="Assets\Examples\Scripts\ClickToMove.cs" />
     <Compile Include="Assets\Examples\Scripts\SpawnPrefabOnKeyDown.cs" />
     <Compile Include="Assets\Examples\Scripts\LocalNavMeshBuilder.cs" />
     <Compile Include="Assets\Examples\Scripts\FreeCam.cs" />
-    <Compile Include="Assets\Examples\Scripts\DungeonManager.cs" />
-    <Compile Include="Assets\Examples\Scripts\MeshTool.cs" />
-    <Compile Include="Assets\Examples\Scripts\Oscillator.cs" />
     <Compile Include="Assets\Examples\Scripts\EnableIffSleeping.cs" />
-    <Compile Include="Assets\Examples\Scripts\AgentLinkMover.cs" />
     <Compile Include="Assets\Examples\Scripts\RandomWalk.cs" />
     <Compile Include="Assets\Examples\Scripts\DestroyOnTrigger.cs" />
   </ItemGroup>
@@ -326,6 +326,9 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.6f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCVForUnityCSharpDLL">
+      <HintPath>Assets\OpenCVForUnity\org\OpenCVForUnityCSharpDLL.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.6f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>

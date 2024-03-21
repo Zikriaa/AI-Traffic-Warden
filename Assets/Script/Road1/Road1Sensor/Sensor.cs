@@ -5,6 +5,9 @@ using UnityEngine;
 public class Sensor : MonoBehaviour
 {
     [SerializeField]CarAILane1 carAI;
+    int counts = 0;
+
+    public static int vehicleCount;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +23,7 @@ public class Sensor : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Car"))
         {
-            Debug.Log("trigred");
+            //Debug.Log("trigred");
             carAI.move = false;
         }
         if (other.CompareTag("Signal"))
@@ -41,8 +44,15 @@ public class Sensor : MonoBehaviour
                     carAI.move = false;
                 }
             }
-            Debug.Log("SignalCheck");
+           // Debug.Log("SignalCheck");
 
+        }
+        if (other.CompareTag("Detector"))
+        {
+          
+                gameObject.transform.parent.GetChild(4).gameObject.SetActive(true);
+                vehicleCount++;
+            
         }
         
     }
@@ -55,7 +65,7 @@ public class Sensor : MonoBehaviour
             {
                 if (_road1TrafficLight.onGreen)
                 {
-                    Invoke("wait", 3f);
+                    Invoke("wait", 0.5f);
                 }
                 else if (_road1TrafficLight.onYellow)
                 {
@@ -67,7 +77,7 @@ public class Sensor : MonoBehaviour
 
                 }
             }
-            Debug.Log("SignalCheck");
+            //Debug.Log("SignalCheck");
         }
     }
     void wait()
@@ -76,7 +86,13 @@ public class Sensor : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        carAI.move = true;   
+        carAI.move = true;
+        if (other.CompareTag("Signal"))
+        {
+            gameObject.transform.parent.GetChild(4).gameObject.SetActive(false);
+            if (vehicleCount != 0) { vehicleCount--; }
+            else { vehicleCount = 0; }
+        }
     }
 
 }
