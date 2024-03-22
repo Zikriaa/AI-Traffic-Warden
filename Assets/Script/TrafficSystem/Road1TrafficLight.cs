@@ -71,9 +71,9 @@ public class Road1TrafficLight : MonoBehaviour
 
         else if (vehicleCounts > 10 && vehicleCounts <= 17 ) { timerGreen = 20f; }
        
-        else if (vehicleCounts < 17 && vehicleCounts <=25 ) { timerGreen = 30f; }
+        else if (vehicleCounts > 17 && vehicleCounts <=25 ) { timerGreen = 30f; }
        
-        else { timerGreen = 40f; }
+        else { timerGreen = 35f; }
     }
     public void ResetYellowTimer()
     {

@@ -7,6 +7,12 @@ TagManager:
   - Car
   - Signal
   - Detector
+  - Detector2
+  - Detector3
+  - Detector4
+  - Signal2
+  - Signal3
+  - Signal4
   layers:
   - Default
   - TransparentFX

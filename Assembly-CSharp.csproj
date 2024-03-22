@@ -57,21 +57,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\TrafficSystem\Road1TrafficLight.cs" />
+    <Compile Include="Assets\Script\Road1\Road1Sensor\SensorForOtherCars.cs" />
     <Compile Include="Assets\Script\Road1\Road1Script\CarAILane1.cs" />
     <Compile Include="Assets\Script\Road1\Road1Sensor\Sensor.cs" />
-    <Compile Include="Assets\Script\VehicleCalculator\Road1VehicleCalculator.cs" />
-    <Compile Include="Assets\CarAI\Scripts\controllingCarAI.cs" />
-    <Compile Include="Assets\Script\Road1\Road1Sensor\Sensor3.cs" />
-    <Compile Include="Assets\Script\TrafficSystem\TrafficSystemController.cs" />
-    <Compile Include="Assets\CarAI\Scripts\SensorManager.cs" />
-    <Compile Include="Assets\Script\Road1\Road1Sensor\SensorForOtherCars.cs" />
     <Compile Include="Assets\Script\Lane1Spawner.cs" />
     <Compile Include="Assets\Script\Road1\Road1Sensor\Sensor2.cs" />
+    <Compile Include="Assets\Script\VehicleCalculator\Road1VehicleCalculator.cs" />
     <Compile Include="Assets\Script\vehicleDetector.cs" />
     <Compile Include="Assets\Script\VehicleDetector1.cs" />
+    <Compile Include="Assets\CarAI\Scripts\controllingCarAI.cs" />
     <Compile Include="Assets\Script\Road1\Road1Script\CarAILane3.cs" />
+    <Compile Include="Assets\Script\Road1\Road1Sensor\Sensor3.cs" />
+    <Compile Include="Assets\Script\TrafficSystem\TrafficSystemController.cs" />
     <Compile Include="Assets\Script\Road1\Road1Script\CarAILane2.cs" />
     <Compile Include="Assets\CarAI\Scripts\CarAI.cs" />
+    <Compile Include="Assets\CarAI\Scripts\SensorManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\StreamingAssets\OpenCVForUnity\text\OCRHMM_transitions_table.xml" />
@@ -327,9 +327,6 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.6f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
-    </Reference>
-    <Reference Include="OpenCVForUnityCSharpDLL">
-      <HintPath>Assets\OpenCVForUnity\org\OpenCVForUnityCSharpDLL.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.6f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
@@ -703,30 +700,15 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.6f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="EnoxSoftware.OpenCVForUnity.Editor.csproj">
-      <Project>{409E9B87-DB62-944A-0442-39AA1A5540B1}</Project>
-      <Name>EnoxSoftware.OpenCVForUnity.Editor</Name>
+    <ProjectReference Include="Unity.VSCode.Editor.csproj">
+      <Project>{3A61B9F2-927C-CFB9-AE95-E26DBAC8BAF4}</Project>
+      <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="EnoxSoftware.OpenCVForUnity.csproj">
-      <Project>{72FB1BB9-1146-CB8A-73EE-16C106B91DE2}</Project>
-      <Name>EnoxSoftware.OpenCVForUnity</Name>
+    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
+      <Project>{F2623421-DFC5-EA90-FEE9-CE68AE771EDE}</Project>
+      <Name>Unity.VisualStudio.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponents.csproj">
       <Project>{1ED2762F-57BF-C191-AFC2-7B8E18F8F4CE}</Project>
@@ -743,6 +725,18 @@
     <ProjectReference Include="NavMeshComponentsExamples.csproj">
       <Project>{06596936-2E73-6884-2CAC-2C0CBC57B425}</Project>
       <Name>NavMeshComponentsExamples</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{FF9249E4-5B97-617F-094C-F00D96AB579E}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Rider.Editor.csproj">
+      <Project>{CD728C95-43F9-978A-0983-D2C91348F933}</Project>
+      <Name>Unity.Rider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{3B85EA30-8971-6A44-F1E3-A1201D70204B}</Project>
+      <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

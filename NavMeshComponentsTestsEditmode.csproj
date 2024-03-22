@@ -56,11 +56,11 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Tests\Editor\NavMeshModifierVolumeInPrefabTests.cs" />
-    <Compile Include="Assets\Tests\Editor\PrefabStageAutoSavingUtil.cs" />
     <Compile Include="Assets\Tests\Editor\NavMeshSurfaceInPrefabTests.cs" />
     <Compile Include="Assets\Tests\Editor\PrefabSavingUtil.cs" />
     <Compile Include="Assets\Tests\Editor\NavMeshSurfaceInPrefabVariantTests.cs" />
+    <Compile Include="Assets\Tests\Editor\NavMeshModifierVolumeInPrefabTests.cs" />
+    <Compile Include="Assets\Tests\Editor\PrefabStageAutoSavingUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Tests\Editor\NavMeshComponentsTestsEditmode.asmdef" />
@@ -705,18 +705,6 @@
     <Reference Include="System.Xml.XPath.XDocument">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.6f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.TestRunner">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.TestRunner">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="NavMeshComponents.csproj">
@@ -726,6 +714,22 @@
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
       <Project>{684A1C2D-94D0-940D-39AA-33B83146334B}</Project>
       <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{63D2B06B-FB7A-E132-F07F-09046E98F19E}</Project>
+      <Name>UnityEngine.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.TestRunner.csproj">
+      <Project>{67060BC5-6620-F553-2D77-58FF191FE5BC}</Project>
+      <Name>UnityEditor.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{FF9249E4-5B97-617F-094C-F00D96AB579E}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{3B85EA30-8971-6A44-F1E3-A1201D70204B}</Project>
+      <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
