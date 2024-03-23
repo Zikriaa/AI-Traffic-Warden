@@ -60,17 +60,17 @@
     <Compile Include="Assets\Script\Road1\Road1Sensor\SensorForOtherCars.cs" />
     <Compile Include="Assets\Script\Road1\Road1Script\CarAILane1.cs" />
     <Compile Include="Assets\Script\Road1\Road1Sensor\Sensor.cs" />
-    <Compile Include="Assets\Script\Lane1Spawner.cs" />
+    <Compile Include="Assets\Script\CameraManager\UpdateRoadStats.cs" />
+    <Compile Include="Assets\Script\SpawnerScript\Lane1Spawner.cs" />
     <Compile Include="Assets\Script\Road1\Road1Sensor\Sensor2.cs" />
-    <Compile Include="Assets\Script\VehicleCalculator\Road1VehicleCalculator.cs" />
-    <Compile Include="Assets\Script\vehicleDetector.cs" />
-    <Compile Include="Assets\Script\VehicleDetector1.cs" />
+    <Compile Include="Assets\Script\SpawnerScript\VehicleSpawnerLane2or4.cs" />
+    <Compile Include="Assets\Script\CameraManager\CameraChanger.cs" />
     <Compile Include="Assets\CarAI\Scripts\controllingCarAI.cs" />
     <Compile Include="Assets\Script\Road1\Road1Script\CarAILane3.cs" />
     <Compile Include="Assets\Script\Road1\Road1Sensor\Sensor3.cs" />
     <Compile Include="Assets\Script\TrafficSystem\TrafficSystemController.cs" />
     <Compile Include="Assets\Script\Road1\Road1Script\CarAILane2.cs" />
-    <Compile Include="Assets\CarAI\Scripts\CarAI.cs" />
+    <Compile Include="Assets\Script\CarAI.cs" />
     <Compile Include="Assets\CarAI\Scripts\SensorManager.cs" />
   </ItemGroup>
   <ItemGroup>

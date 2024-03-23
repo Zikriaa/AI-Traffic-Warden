@@ -59,7 +59,7 @@ public class Road1TrafficLight : MonoBehaviour
             if (timerGreen <= 0)
             {
                 onGreen = false; 
-                Invoke("ResetGreenTimer", 2f);
+               // Invoke("ResetGreenTimer", 2f);
             }
 
         }
@@ -67,13 +67,13 @@ public class Road1TrafficLight : MonoBehaviour
     }
     public void SetGreenTimer(int vehicleCounts)
     {
-        if (vehicleCounts >=0 && vehicleCounts <= 10) { timerGreen = 10f;  }
+        if (vehicleCounts >=0 && vehicleCounts <= 7) { timerGreen = 10f;  }
 
-        else if (vehicleCounts > 10 && vehicleCounts <= 17 ) { timerGreen = 20f; }
+        else if (vehicleCounts > 7 && vehicleCounts <= 15) { timerGreen = 15f; }
        
-        else if (vehicleCounts > 17 && vehicleCounts <=25 ) { timerGreen = 30f; }
+        else if (vehicleCounts > 15 && vehicleCounts <=22 ) { timerGreen = 25f; }
        
-        else { timerGreen = 35f; }
+        else { timerGreen = 30f; }
     }
     public void ResetYellowTimer()
     {
