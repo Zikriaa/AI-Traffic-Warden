@@ -77,7 +77,7 @@ public class Road1TrafficLight : MonoBehaviour
     }
     public void ResetYellowTimer()
     {
-        timerYellow = 5f;
+        timerYellow = 7f;
     }
     private void ResetGreenTimer()
     {

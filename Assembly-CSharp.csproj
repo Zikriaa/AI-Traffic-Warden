@@ -64,10 +64,10 @@
     <Compile Include="Assets\Script\SpawnerScript\Lane1Spawner.cs" />
     <Compile Include="Assets\Script\Road1\Road1Sensor\Sensor2.cs" />
     <Compile Include="Assets\Script\SpawnerScript\VehicleSpawnerLane2or4.cs" />
-    <Compile Include="Assets\Script\CameraManager\CameraChanger.cs" />
     <Compile Include="Assets\CarAI\Scripts\controllingCarAI.cs" />
     <Compile Include="Assets\Script\Road1\Road1Script\CarAILane3.cs" />
     <Compile Include="Assets\Script\Road1\Road1Sensor\Sensor3.cs" />
+    <Compile Include="Assets\Script\CameraManager\CameraAndPanelManager.cs" />
     <Compile Include="Assets\Script\TrafficSystem\TrafficSystemController.cs" />
     <Compile Include="Assets\Script\Road1\Road1Script\CarAILane2.cs" />
     <Compile Include="Assets\Script\CarAI.cs" />

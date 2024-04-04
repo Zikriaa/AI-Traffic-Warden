@@ -2081,7 +2081,7 @@ GameObject:
   - component: {fileID: 41517893}
   - component: {fileID: 41517895}
   - component: {fileID: 41517894}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2927,7 +2927,7 @@ GameObject:
   - component: {fileID: 53945430}
   - component: {fileID: 53945432}
   - component: {fileID: 53945431}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: nowTotalTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3224,7 +3224,7 @@ GameObject:
   - component: {fileID: 58217752}
   - component: {fileID: 58217754}
   - component: {fileID: 58217753}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Road1_Details
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3253,11 +3253,11 @@ RectTransform:
   m_Father: {fileID: 918442530}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -57.544876, y: -16.3303}
-  m_SizeDelta: {x: -115.0897, y: 32.6606}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 192.6144, y: 164.4385}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &58217753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3271,7 +3271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0.121395506, g: 0.30762747, b: 0.8301887, a: 0.69411767}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4558,7 +4558,7 @@ Transform:
   - {fileID: 1539846857}
   - {fileID: 1322533148}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &110078107
 PrefabInstance:
@@ -4650,7 +4650,7 @@ GameObject:
   - component: {fileID: 113396508}
   - component: {fileID: 113396510}
   - component: {fileID: 113396509}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: nowTotalTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7380,7 +7380,7 @@ GameObject:
   - component: {fileID: 190544578}
   - component: {fileID: 190544580}
   - component: {fileID: 190544579}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: Text (Legacy) (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7420,7 +7420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10331,7 +10331,7 @@ GameObject:
   - component: {fileID: 267210936}
   - component: {fileID: 267210937}
   - component: {fileID: 267210938}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: lastTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12227,7 +12227,7 @@ GameObject:
   - component: {fileID: 320446520}
   - component: {fileID: 320446522}
   - component: {fileID: 320446521}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Road2_Details
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12256,11 +12256,11 @@ RectTransform:
   m_Father: {fileID: 918442530}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -57.544876, y: -16.3303}
-  m_SizeDelta: {x: -115.0897, y: 32.6606}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 192.6144, y: 164.4385}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &320446521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12274,7 +12274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0.10457456, g: 0.2919208, b: 0.8867924, a: 0.65882355}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -16073,7 +16073,7 @@ Transform:
   m_Children:
   - {fileID: 918442530}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &424676077
 MonoBehaviour:
@@ -16268,7 +16268,7 @@ GameObject:
   - component: {fileID: 425507392}
   - component: {fileID: 425507394}
   - component: {fileID: 425507393}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: lastTotalVehicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18531,6 +18531,62 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 488865430}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &488923653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 488923655}
+  - component: {fileID: 488923654}
+  m_Layer: 0
+  m_Name: Camera&PanelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &488923654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488923653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbe42537d94d0594d94c6acbb3d27726, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameras:
+  - {fileID: 963194227}
+  - {fileID: 500081255}
+  - {fileID: 1539846859}
+  - {fileID: 1915166185}
+  - {fileID: 1322533150}
+  panels:
+  - {fileID: 1581453067}
+  - {fileID: 58217751}
+  - {fileID: 320446519}
+  - {fileID: 1411891082}
+  - {fileID: 2004326601}
+--- !u!4 &488923655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488923653}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -164.93767, y: -52.15894, z: 38.763557}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &489605267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18978,7 +19034,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &500081254
 AudioListener:
   m_ObjectHideFlags: 0
@@ -19018,7 +19074,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 511
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -19233,7 +19289,7 @@ GameObject:
   - component: {fileID: 510204982}
   - component: {fileID: 510204984}
   - component: {fileID: 510204983}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: lastTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21190,7 +21246,7 @@ GameObject:
   - component: {fileID: 545668875}
   - component: {fileID: 545668877}
   - component: {fileID: 545668876}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text (Legacy) (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21230,7 +21286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -22292,7 +22348,7 @@ GameObject:
   - component: {fileID: 579521431}
   - component: {fileID: 579521433}
   - component: {fileID: 579521432}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23394,7 +23450,7 @@ GameObject:
   - component: {fileID: 606059994}
   - component: {fileID: 606059996}
   - component: {fileID: 606059995}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: lastTotalVehicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23612,7 +23668,7 @@ GameObject:
   - component: {fileID: 608605730}
   - component: {fileID: 608605732}
   - component: {fileID: 608605731}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: lastTotalVehicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26026,7 +26082,7 @@ GameObject:
   - component: {fileID: 695949429}
   - component: {fileID: 695949431}
   - component: {fileID: 695949430}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: nowTotalTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29156,7 +29212,7 @@ GameObject:
   - component: {fileID: 774579521}
   - component: {fileID: 774579520}
   - component: {fileID: 774579519}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: nowTotalTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29524,7 +29580,7 @@ GameObject:
   - component: {fileID: 782703627}
   - component: {fileID: 782703629}
   - component: {fileID: 782703628}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30171,7 +30227,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &797987826
 Transform:
   m_ObjectHideFlags: 0
@@ -30936,7 +30992,7 @@ GameObject:
   - component: {fileID: 814854724}
   - component: {fileID: 814854726}
   - component: {fileID: 814854725}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: lastTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33799,7 +33855,7 @@ GameObject:
   - component: {fileID: 888534820}
   - component: {fileID: 888534822}
   - component: {fileID: 888534821}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: nowTotalVehicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34059,7 +34115,7 @@ GameObject:
   - component: {fileID: 896986766}
   - component: {fileID: 896986768}
   - component: {fileID: 896986767}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Text (Legacy) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34099,7 +34155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -34837,6 +34893,7 @@ RectTransform:
   - {fileID: 320446520}
   - {fileID: 1411891083}
   - {fileID: 2004326602}
+  - {fileID: 1581453068}
   m_Father: {fileID: 424676076}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -34877,7 +34934,7 @@ MonoBehaviour:
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 16, y: 9}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -36742,7 +36799,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &963194226
 AudioListener:
   m_ObjectHideFlags: 0
@@ -41485,7 +41542,7 @@ GameObject:
   - component: {fileID: 1070078615}
   - component: {fileID: 1070078617}
   - component: {fileID: 1070078616}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text (Legacy) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41525,7 +41582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -44062,7 +44119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1164310086
 Transform:
   m_ObjectHideFlags: 0
@@ -47166,7 +47223,7 @@ GameObject:
   - component: {fileID: 1258693682}
   - component: {fileID: 1258693683}
   - component: {fileID: 1258693684}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: lastTotalVehicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49250,7 +49307,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2303
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -51631,7 +51688,7 @@ GameObject:
   - component: {fileID: 1382592622}
   - component: {fileID: 1382592624}
   - component: {fileID: 1382592623}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Text (Legacy) (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51671,7 +51728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -51995,7 +52052,7 @@ GameObject:
   - component: {fileID: 1386509988}
   - component: {fileID: 1386509990}
   - component: {fileID: 1386509989}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: Text (Legacy) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52035,7 +52092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -52951,7 +53008,7 @@ GameObject:
   - component: {fileID: 1411891083}
   - component: {fileID: 1411891085}
   - component: {fileID: 1411891084}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: Road3_Details
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52980,11 +53037,11 @@ RectTransform:
   m_Father: {fileID: 918442530}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -57.544876, y: -24}
-  m_SizeDelta: {x: -115.0897, y: 32.6606}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 192.6144, y: 164.4385}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1411891084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52998,7 +53055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0.11485406, g: 0.28308684, b: 0.8396226, a: 0.68235296}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -57091,7 +57148,7 @@ GameObject:
   - component: {fileID: 1519610092}
   - component: {fileID: 1519610094}
   - component: {fileID: 1519610093}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text (Legacy) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57131,7 +57188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -58130,7 +58187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1539846857
 Transform:
   m_ObjectHideFlags: 0
@@ -58185,7 +58242,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 767
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -59772,6 +59829,82 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1578147265}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1581453067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1581453068}
+  - component: {fileID: 1581453070}
+  - component: {fileID: 1581453069}
+  m_Layer: 5
+  m_Name: maincamerPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1581453068
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581453067}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 918442530}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1581453069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581453067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1581453070
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581453067}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1582317011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59974,7 +60107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1595168185
 Transform:
   m_ObjectHideFlags: 0
@@ -64576,7 +64709,7 @@ GameObject:
   - component: {fileID: 1718995335}
   - component: {fileID: 1718995337}
   - component: {fileID: 1718995336}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65891,7 +66024,7 @@ GameObject:
   - component: {fileID: 1745387993}
   - component: {fileID: 1745387995}
   - component: {fileID: 1745387994}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: nowTotalVehicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67099,7 +67232,7 @@ GameObject:
   - component: {fileID: 1788340194}
   - component: {fileID: 1788340196}
   - component: {fileID: 1788340195}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: lastTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67812,7 +67945,7 @@ GameObject:
   - component: {fileID: 1804841195}
   - component: {fileID: 1804841197}
   - component: {fileID: 1804841196}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: nowTotalVehicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69853,7 +69986,7 @@ GameObject:
   - component: {fileID: 1842317676}
   - component: {fileID: 1842317677}
   - component: {fileID: 1842317678}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: nowTotalVehicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72285,7 +72418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1915166183
 Transform:
   m_ObjectHideFlags: 0
@@ -72308,7 +72441,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915166182}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1915166185
 Camera:
   m_ObjectHideFlags: 0
@@ -72340,7 +72473,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1279
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -75062,13 +75195,13 @@ GameObject:
   - component: {fileID: 2004326602}
   - component: {fileID: 2004326604}
   - component: {fileID: 2004326603}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Road4_Details
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2004326602
 RectTransform:
   m_ObjectHideFlags: 0
@@ -75091,11 +75224,11 @@ RectTransform:
   m_Father: {fileID: 918442530}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -57.544876, y: -24}
-  m_SizeDelta: {x: -115.0897, y: 32.6606}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 192.6144, y: 164.4385}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &2004326603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75109,7 +75242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0.13243146, g: 0.29231584, b: 0.9056604, a: 0.7019608}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -75363,7 +75496,7 @@ GameObject:
   - component: {fileID: 2014877792}
   - component: {fileID: 2014877794}
   - component: {fileID: 2014877793}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text (Legacy) (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75403,7 +75536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

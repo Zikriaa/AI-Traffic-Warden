@@ -333,7 +333,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/CarAI/Scripts/controllingCarAI.cs"
 "Assets/CarAI/Scripts/SensorManager.cs"
-"Assets/Script/CameraManager/CameraChanger.cs"
+"Assets/Script/CameraManager/CameraAndPanelManager.cs"
 "Assets/Script/CameraManager/UpdateRoadStats.cs"
 "Assets/Script/CarAI.cs"
 "Assets/Script/Road1/Road1Script/CarAILane1.cs"
